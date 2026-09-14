@@ -1,0 +1,6 @@
+@BE_webnhahangtieccuoi_HostAddress = http://localhost:5062
+
+GET {{BE_webnhahangtieccuoi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
