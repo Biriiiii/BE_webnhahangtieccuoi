@@ -1,5 +1,5 @@
 namespace BE_webnhahangtieccuoi.Models.Entities;
-
+using System.Text.Json.Serialization;
 public class GalleryAlbum
 {
     public int Id { get; set; }
@@ -10,6 +10,6 @@ public class GalleryAlbum
     public ServiceCategory? ServiceCategory { get; set; }
     public bool IsActive { get; set; } = true;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
+    public string? GoogleDriveFolderId { get; set; }
     public ICollection<GalleryItem> Items { get; set; } = new List<GalleryItem>();
 }

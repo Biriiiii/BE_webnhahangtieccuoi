@@ -14,7 +14,7 @@ public class ServiceCategory
     public string? ThumbnailUrl { get; set; }
     public int DisplayOrder { get; set; }
     public bool IsActive { get; set; } = true;
-
+    public string? ImageUrl { get; set; }
     public ICollection<Service> Services { get; set; } = new List<Service>();
     public ICollection<Lead> Leads { get; set; } = new List<Lead>();
 }
