@@ -107,11 +107,8 @@ using (var scope = app.Services.CreateScope())
     DbSeeder.Seed(context);
 }
 // ---------- Swagger ----------
-if (app.Environment.IsDevelopment())
-{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
 
 // ---------- Middleware ----------
 app.UseHttpsRedirection();
